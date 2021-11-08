@@ -1,14 +1,22 @@
 import { nanoid } from 'nanoid';
+import {
+  AboutData,
+  ContactData,
+  FooterData,
+  HeaderData,
+  HeroData,
+  ProjectData,
+} from '../interfaces';
 
 // HEAD DATA
-export const headData = {
+export const headData: HeaderData = {
   title: '', // e.g: 'Name | Developer'
   lang: '', // e.g: en, es, fr, jp
   description: '', // e.g: Welcome to my website
 };
 
 // HERO DATA
-export const heroData = {
+export const heroData: HeroData = {
   title: '',
   name: '',
   subtitle: '',
@@ -16,7 +24,7 @@ export const heroData = {
 };
 
 // ABOUT DATA
-export const aboutData = {
+export const aboutData: AboutData = {
   img: 'profile.jpg',
   paragraphOne: '',
   paragraphTwo: '',
@@ -25,7 +33,7 @@ export const aboutData = {
 };
 
 // PROJECTS DATA
-export const projectsData = [
+export const projectsData: ProjectData[] = [
   {
     id: nanoid(),
     img: 'project.jpg',
@@ -56,14 +64,14 @@ export const projectsData = [
 ];
 
 // CONTACT DATA
-export const contactData = {
+export const contactData: ContactData = {
   cta: '',
   btn: '',
   email: '',
 };
 
 // FOOTER DATA
-export const footerData = {
+export const footerData: FooterData = {
   networks: [
     {
       id: nanoid(),

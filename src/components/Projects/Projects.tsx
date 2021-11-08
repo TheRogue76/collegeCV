@@ -1,5 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
+// @ts-ignore
 import Fade from 'react-reveal/Fade';
+// @ts-ignore
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
@@ -10,6 +12,7 @@ const Projects = () => {
   const { projects } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
+
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {

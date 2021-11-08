@@ -104,7 +104,7 @@ Once your server has started, go to this url `http://localhost:8000/` and you wi
 
 ### Step 1 - STRUCTURE
 
-Go to `/src/mock/data.js` and fill your information, they are 5 objects:
+Go to `/src/mock/data.ts` and fill your information, they are 5 objects:
 
 ### Hero Section
 

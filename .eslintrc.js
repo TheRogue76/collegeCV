@@ -1,19 +1,27 @@
 module.exports = {
-  extends: ['airbnb', 'prettier'],
-  plugins: ['prettier'],
+  root: true,
   env: {
-    browser: true,
-    es6: true,
+    jest: true,
   },
+  extends: ['@react-native-community'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['react', '@typescript-eslint'],
+  ignorePatterns: ['e2e/*.e2e.js'],
   rules: {
-    'import/no-extraneous-dependencies': 'off',
-    'prettier/prettier': 'error',
-    'no-console': 'warn',
-    'react/jsx-one-expression-per-line': 'off',
-    'react/jsx-filename-extension': 'off', // disable if necessary
-    'react/static-property-placement': 'off', // disable if necessary
-    'react/jsx-props-no-spreading': 'off', // disable if necessary
-    'react/require-default-props': 'off',
+    'no-lone-blocks': 0,
+    'react-native/no-inline-styles': 0,
+    '@typescript-eslint/no-unused-vars': 0,
+    'no-useless-escape': 0,
+    'no-console': 2,
+    '@typescript-eslint/no-explicit-any': 1,
+    'padding-line-between-statements': [
+      1,
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: ['var', 'const', 'let', 'block', 'block-like', 'class', 'case'],
+      },
+    ],
+    'lines-between-class-members': [1, 'always'],
   },
-  parser: 'babel-eslint',
 };

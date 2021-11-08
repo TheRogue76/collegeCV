@@ -1,14 +1,17 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
+// @ts-ignore
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
+
   const { title, name, subtitle, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
+
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
