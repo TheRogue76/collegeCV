@@ -37,7 +37,7 @@ export const aboutData: AboutData = {
 export const projectsData: ProjectData[] = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'pacman.png',
     title: 'Pacman Game',
     info: 'Open source',
     info2:
@@ -46,21 +46,21 @@ export const projectsData: ProjectData[] = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'adobeConnect.png',
     title: 'AdobeConnectExporter',
     info: 'Open source',
     info2:
       "A fork of an adobe connect exporter written in python. Extended it's ability to include more universities and merged into the master branch",
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/ParsaHejabi/AdobeConnectExporter', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'CVHR.jpeg',
+    title: 'Computer Vision: Handwriting recognition',
+    info: 'Open Source',
+    info2:
+      'Done as a part of my college curriculum, This project uses OpenCV and Keras and trains two convolutional neural networks for persian handwriting recognition',
+    repo: 'https://github.com/TheRogue76/Computer-Vision', // if no repo, the button will not show up
   },
 ];
 
