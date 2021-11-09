@@ -10,23 +10,24 @@ import {
 
 // HEAD DATA
 export const headData: HeaderData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Parsa Nasirimehr', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
+  description: 'Welcome to my personal website', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData: HeroData = {
   title: '',
-  name: '',
-  subtitle: '',
+  name: 'Parsa Nasirimehr',
+  subtitle: "I'm a software engineer",
   cta: '',
 };
 
 // ABOUT DATA
 export const aboutData: AboutData = {
   img: 'profile.jpg',
-  paragraphOne: '',
+  paragraphOne:
+    'My name is Parsa Nasirimehr. I am a Software Engineer with 3 years of professional experience developing software solutions. I graduated from K.N.T.U University of Technology with a B.Sc. in Computer Engineering. My main research interests are Software Engineering, Software Validation and Software Evolution.',
   paragraphTwo: '',
   paragraphThree: '',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
@@ -94,9 +95,4 @@ export const footerData: FooterData = {
       url: '',
     },
   ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
 };
