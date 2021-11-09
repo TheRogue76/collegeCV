@@ -15,7 +15,6 @@ export interface AboutData {
   img: string;
   paragraphOne: string;
   paragraphTwo: string;
-  paragraphThree: string;
   resume: string;
 }
 
@@ -25,8 +24,8 @@ export interface ProjectData {
   title: string;
   info: string;
   info2: string;
-  url: string;
-  repo: string;
+  url?: string;
+  repo?: string;
 }
 
 export interface ContactData {

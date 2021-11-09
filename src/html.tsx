@@ -1,9 +1,16 @@
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/no-danger */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable jsx-a11y/html-has-lang */
 import React from 'react';
-import PropTypes from 'prop-types';
+
+interface Props {
+  htmlAttributes: React.DetailedHTMLProps<
+    React.HtmlHTMLAttributes<HTMLHtmlElement>,
+    HTMLHtmlElement
+  >;
+  headComponents: JSX.Element[];
+  bodyAttributes: React.DetailedHTMLProps<React.HTMLAttributes<HTMLBodyElement>, HTMLBodyElement>;
+  preBodyComponents: JSX.Element[];
+  body: string;
+  postBodyComponents: JSX.Element[];
+}
 
 export default function HTML({
   htmlAttributes,
@@ -12,7 +19,7 @@ export default function HTML({
   preBodyComponents,
   postBodyComponents,
   body,
-}) {
+}: Props) {
   return (
     <html {...htmlAttributes}>
       <head>
@@ -29,12 +36,3 @@ export default function HTML({
     </html>
   );
 }
-
-HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
-  body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
-};

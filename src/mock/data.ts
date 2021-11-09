@@ -28,9 +28,9 @@ export const aboutData: AboutData = {
   img: 'profile.jpg',
   paragraphOne:
     'My name is Parsa Nasirimehr. I am a Software Engineer with 3 years of professional experience developing software solutions. I graduated from K.N.T.U University of Technology with a B.Sc. in Computer Engineering. My main research interests are Software Engineering, Software Validation and Software Evolution.',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  paragraphTwo:
+    'Creative and self-motivated Computer Scientist interested in research and implementation. Adequate knowledge of programming languages and frameworks relevant for software engineering and web / mobile development. Committed to working as a team member and collaborating with others.',
+  resume: require('../images/CV.pdf'), // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -38,19 +38,19 @@ export const projectsData: ProjectData[] = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    title: 'Pacman Game',
+    info: 'Open source',
+    info2:
+      "Pacman game is on open source game developed in Unity using C# as my bachelor degree's final project and runs on iOS and Android. The game has all the original enemies and is controlled using an on screen navigator",
+    repo: 'https://gitlab.com/p.nasirimehr/pac-man',
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
+    title: 'AdobeConnectExporter',
+    info: 'Open source',
+    info2:
+      "A fork of an adobe connect exporter written in python. Extended it's ability to include more universities and merged into the master branch",
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
@@ -68,7 +68,7 @@ export const projectsData: ProjectData[] = [
 export const contactData: ContactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'p.nasirimehr@gmail.com',
 };
 
 // FOOTER DATA
@@ -77,22 +77,17 @@ export const footerData: FooterData = {
     {
       id: nanoid(),
       name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
+      url: 'https://twitter.com/ParsaNasirimehr',
     },
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/parsa-nasirimehr-3547b9168/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/TheRogue76',
     },
   ],
 };
