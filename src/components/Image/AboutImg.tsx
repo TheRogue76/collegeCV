@@ -1,10 +1,24 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import Img, { FixedObject } from 'gatsby-image';
 
 interface Props {
   filename: string;
   alt: string;
+}
+
+interface Data {
+  images: {
+    edges: {
+      node: {
+        relativePath: string;
+        name: string;
+        childImageSharp: {
+          fixed: FixedObject | FixedObject[];
+        };
+      };
+    }[];
+  };
 }
 
 const AboutImg = (props: Props) => (
@@ -26,10 +40,8 @@ const AboutImg = (props: Props) => (
         }
       }
     `}
-    render={(data) => {
-      const image = data.images.edges.find((n: { node: { relativePath: string | string[] } }) =>
-        n.node.relativePath.includes(props.filename)
-      );
+    render={(data: Data) => {
+      const image = data.images.edges.find((n) => n.node.relativePath.includes(props.filename));
 
       if (!image) {
         return null;

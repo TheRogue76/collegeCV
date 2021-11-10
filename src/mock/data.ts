@@ -27,7 +27,7 @@ export const heroData: HeroData = {
 export const aboutData: AboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    'My name is Parsa Nasirimehr. I am a Software Engineer with 3 years of professional experience developing software solutions. I graduated from K.N.T.U University of Technology with a B.Sc. in Computer Engineering. My main research interests are Software Engineering, Software Validation and Software Evolution.',
+    'I am a Software Engineer with 3 years of professional experience developing software solutions. I graduated from K.N.T.U University of Technology with a B.Sc. in Computer Engineering. My main research interests are Software Engineering, Software Validation and Software Evolution.',
   paragraphTwo:
     'Creative and self-motivated Computer Scientist interested in research and implementation. Adequate knowledge of programming languages and frameworks relevant for software engineering and web / mobile development. Committed to working as a team member and collaborating with others.',
   resume: require('../images/CV.pdf'), // if no resume, the button will not show up
@@ -35,6 +35,24 @@ export const aboutData: AboutData = {
 
 // PROJECTS DATA
 export const projectsData: ProjectData[] = [
+  {
+    id: nanoid(),
+    img: 'appetit.png',
+    title: 'Appetit',
+    info: 'Appetit',
+    info2:
+      'A Workout app built with RN for iOS and Android, with health tracking using Apple Healthkit and Google Fit. Made to connect coaches with their customers and to provide a platform for streaming their workouts',
+    url: 'https://www.appetit.fit/',
+  },
+  {
+    id: nanoid(),
+    img: 'RNCV.png',
+    title: 'RN Camera Vision',
+    info: 'Open Source',
+    info2:
+      "A React Native camera app that uses the camera to detect objects with MLKit Vision. It's noteworthy feature is it's capability to process live images at 60 FPS",
+    repo: 'https://github.com/TheRogue76/rn-camera-vision',
+  },
   {
     id: nanoid(),
     img: 'pacman.png',
@@ -46,12 +64,21 @@ export const projectsData: ProjectData[] = [
   },
   {
     id: nanoid(),
-    img: 'adobeConnect.png',
-    title: 'AdobeConnectExporter',
-    info: 'Open source',
+    img: 'patogh.png',
+    title: 'Patogh Social App',
+    info: 'K.N.T.U University of Technology',
     info2:
-      "A fork of an adobe connect exporter written in python. Extended it's ability to include more universities and merged into the master branch",
-    repo: 'https://github.com/ParsaHejabi/AdobeConnectExporter', // if no repo, the button will not show up
+      'A Social gathering coordinator app built natively for Android as part of my System Analysis and Design course in college. I served as Scrum master, Back-end Developer and DevOps on this project',
+    url: 'https://prezi.com/p/bqql2m5-pjjk/patogh/',
+  },
+  {
+    id: nanoid(),
+    img: 'xapa.png',
+    title: 'Xapa',
+    info: 'Xapa',
+    info2:
+      "A crypto currency wallet app with coin exchange capabilities. On top of developing it's UI, I created the webhook service that connected to bitcoin core for tracking all incoming and outgoing transactions of our wallets",
+    url: 'https://xapawallet.com/',
   },
   {
     id: nanoid(),
@@ -61,6 +88,15 @@ export const projectsData: ProjectData[] = [
     info2:
       'Done as a part of my college curriculum, This project uses OpenCV and Keras and trains two convolutional neural networks for persian handwriting recognition',
     repo: 'https://github.com/TheRogue76/Computer-Vision', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'adobeConnect.png',
+    title: 'AdobeConnectExporter',
+    info: 'Open source',
+    info2:
+      "A fork of an adobe connect exporter written in python. Extended it's ability to include more universities and merged into the master branch",
+    repo: 'https://github.com/ParsaHejabi/AdobeConnectExporter', // if no repo, the button will not show up
   },
 ];
 
