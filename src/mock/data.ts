@@ -37,21 +37,20 @@ export const aboutData: AboutData = {
 export const projectsData: ProjectData[] = [
   {
     id: nanoid(),
+    img: 'dietdoctor.png',
+    title: 'DietDoctor',
+    info: 'DietDoctor',
+    info2: 'A Dietary app built with RN for iOS and Android, with a focus on metabolic health.',
+    url: 'https://www.dietdoctor.com/',
+  },
+  {
+    id: nanoid(),
     img: 'appetit.png',
     title: 'Appetit',
     info: 'Appetit',
     info2:
       'A Workout app built with RN for iOS and Android, with health tracking using Apple Healthkit and Google Fit. Made to connect coaches with their customers and to provide a platform for streaming their workouts',
     url: 'https://www.appetit.fit/',
-  },
-  {
-    id: nanoid(),
-    img: 'RNCV.png',
-    title: 'RN Camera Vision',
-    info: 'Open Source',
-    info2:
-      "A React Native camera app that uses the camera to detect objects with MLKit Vision. It's noteworthy feature is it's capability to process live images at 60 FPS",
-    repo: 'https://github.com/TheRogue76/rn-camera-vision',
   },
   {
     id: nanoid(),
@@ -124,6 +123,11 @@ export const footerData: FooterData = {
       id: nanoid(),
       name: 'github',
       url: 'https://github.com/TheRogue76',
+    },
+    {
+      id: nanoid(),
+      name: 'envelope',
+      url: 'mailto:p.nasirimehr@gmail.com',
     },
   ],
 };
