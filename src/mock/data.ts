@@ -25,7 +25,7 @@ export const heroData: HeroData = {
 
 // ABOUT DATA
 export const aboutData: AboutData = {
-  img: 'profile.jpg',
+  img: 'profile.png',
   paragraphOne:
     'I am a Software Engineer with 4 years of professional experience developing software solutions. I graduated from K.N.T University of Technology with a B.Sc. in Computer Engineering. My main research interests are Software Engineering, Software Validation and Software Evolution.',
   paragraphTwo:
