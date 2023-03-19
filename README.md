@@ -3,7 +3,7 @@
 ## A clean, beautiful and responsive portfolio template for Developers
 
 <h2 align="center">
-  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.gif" alt="Gatsby Simplefolio" width="600px" />
+  <img src="https://github.com/TheRogue76/collegeCV/blob/master/examples/example.gif" alt="Gatsby Simplefolio" width="600px" />
   <br>
 </h2>
 
@@ -33,8 +33,7 @@ You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/downl
 Also you need to have installed [Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start/)
 
 ```
-node@v10.16.0 or higher
-npm@6.9.0 or higher
+node@v18.0.0 or higher
 git@2.17.1 or higher
 gatsby-cli@2.8.22 or higher
 ```
@@ -108,8 +107,8 @@ Go to `/src/mock/data.ts` and fill your information, they are 5 objects:
 
 ### Hero Section
 
-```javascript
-export const heroData = {
+```typescript
+export const heroData: HeroData = {
   title: '', // Hello, my name is
   name: '', // John
   subtitle: '', // I'm the Unknown Developer.
@@ -121,9 +120,9 @@ export const heroData = {
 
 **_Important Note_**: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly.
 
-```javascript
-export const aboutData = {
-  img: 'profile.jpg', // put your profile image (recommended aspect radio: square)
+```typescript
+export const aboutData: AboutData = {
+  img: 'profile.png', // put your profile image (recommended aspect radio: square)
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
@@ -137,8 +136,8 @@ export const aboutData = {
 
 Put as many projects object you want inside the `array`.
 
-```javascript
-export const projectsData = [
+```typescript
+export const projectsData: ProjectData[] = [
   {
     id: nanoid(),
     img: 'project.jpg',
@@ -157,14 +156,13 @@ export const projectsData = [
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
-  ...
 ];
 ```
 
 ### Contact Section
 
-```javascript
-export const contactData = {
+```typescript
+export const contactData: ContactData = {
   cta: '', // call to action text for the contact section
   btn: '', // text inside the button
   email: '',
@@ -176,8 +174,8 @@ export const contactData = {
 You can remove or add as many you social-media icons you want.\
 Just put an object with the corresponding values inside the networks `array` or remove it from there.
 
-```javascript
-export const footerData = {
+```typescript
+export const footerData: FooterData = {
   networks: [
     {
       id: nanoid(),
@@ -200,17 +198,6 @@ export const footerData = {
       url: '', // your github url
     },
   ],
-};
-```
-
-### Required - Disable GitHub buttons
-
-Set `isEnabled` to `false` once you finish setup your portfolio.\
-By setting to `false` it will hide the GitHub stars/fork buttons
-
-```javascript
-export const githubButtons = {
-  isEnabled: true, // true is the default value
 };
 ```
 
@@ -252,10 +239,11 @@ I highly recommend to use [Netlify](https://netlify.com) to achieve this on the 
 ## Authors
 
 - **Jacobo Martinez** - [https://github.com/cobidev](https://github.com/cobidev)
+- **Parsa Nasirimehr** - [https://github.com/TheRogue76](https://github.com/TheRogue76)
 
 ## Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2365af6f-820a-4fb8-83e6-69a66f686dfe/deploy-status)](https://app.netlify.com/sites/gatsby-simplefolio/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d8a85a1e-45e0-4d61-b583-64194b22151a/deploy-status)](https://app.netlify.com/sites/gatsby-simplefolio/deploys)
 
 ## License 📄
 
@@ -263,4 +251,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments 🎁
 
-I was motivated to create this project because I wanted to contribute on something useful for the dev community, thanks to [ZTM Community](https://github.com/zero-to-mastery) and [Andrei](https://github.com/aneagoie)
+Huge shout out to Jacobo Martinez. I took this portfolio, fixed the node-sass issue so that it can run with the latest node versions, migrated it from JS to TS and
+I have been maintaining my fork ever since. It is a lovely and beautiful template, and frankly i will try to keep it running for as long as i can.
