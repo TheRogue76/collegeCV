@@ -3,7 +3,7 @@
 ## A clean, beautiful and responsive portfolio template for Developers
 
 <h2 align="center">
-  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.gif" alt="Gatsby Simplefolio" width="600px" />
+  <img src="https://github.com/TheRogue76/collegeCV/blob/master/examples/example.gif" alt="Gatsby Simplefolio" width="600px" />
   <br>
 </h2>
 
@@ -243,7 +243,7 @@ I highly recommend to use [Netlify](https://netlify.com) to achieve this on the 
 
 ## Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2365af6f-820a-4fb8-83e6-69a66f686dfe/deploy-status)](https://app.netlify.com/sites/gatsby-simplefolio/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d8a85a1e-45e0-4d61-b583-64194b22151a/deploy-status)](https://app.netlify.com/sites/gatsby-simplefolio/deploys)
 
 ## License 📄
 
