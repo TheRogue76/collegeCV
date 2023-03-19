@@ -27,7 +27,7 @@ export const heroData: HeroData = {
 export const aboutData: AboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    'I am a Software Engineer with 3 years of professional experience developing software solutions. I graduated from K.N.T.U University of Technology with a B.Sc. in Computer Engineering. My main research interests are Software Engineering, Software Validation and Software Evolution.',
+    'I am a Software Engineer with 4 years of professional experience developing software solutions. I graduated from K.N.T University of Technology with a B.Sc. in Computer Engineering. My main research interests are Software Engineering, Software Validation and Software Evolution.',
   paragraphTwo:
     'Creative and self-motivated Computer Scientist interested in research and implementation. Adequate knowledge of programming languages and frameworks relevant for software engineering and web / mobile development. Committed to working as a team member and collaborating with others.',
   resume: require('../images/CV.pdf'), // if no resume, the button will not show up
