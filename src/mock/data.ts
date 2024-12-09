@@ -29,7 +29,7 @@ export const aboutData: AboutData = {
   paragraphOne:
     "I'm a Mobile Engineer with a focus on solutions for both iOS and Android. Experience with Swift, SwiftUI, KMP, and React Native. Current maintainer of Lottie React Native. In my free time, i do some volunteer OSS work (Mostly Lottie and React Native itself).",
   paragraphTwo: '',
-  resume: require('../images/CV.pdf'), // if no resume, the button will not show up
+  resume: 'CV.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
