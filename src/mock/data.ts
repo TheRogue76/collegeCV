@@ -25,7 +25,7 @@ export const heroData: HeroData = {
 
 // ABOUT DATA
 export const aboutData: AboutData = {
-  img: 'profile.png',
+  img: 'profile.JPG',
   paragraphOne:
     "I'm a Mobile Engineer with a focus on solutions for both iOS and Android. Experience with Swift, SwiftUI, KMP, and React Native. Current maintainer of Lottie React Native. In my free time, i do some volunteer OSS work (Mostly Lottie and React Native itself).",
   paragraphTwo: '',
