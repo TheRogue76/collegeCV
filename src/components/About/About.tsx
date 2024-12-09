@@ -6,6 +6,7 @@ import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 import { Element } from 'react-scroll';
+import { ResumeLink } from './ResumeLink';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -49,14 +50,7 @@ const About = () => {
                   <p className="about-wrapper__info-text">{paragraphTwo}</p>
                   {resume && (
                     <span className="d-flex mt-3">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--resume"
-                        href={resume}
-                      >
-                        Resume
-                      </a>
+                      <ResumeLink filename={resume} />
                     </span>
                   )}
                 </div>
