@@ -27,9 +27,8 @@ export const heroData: HeroData = {
 export const aboutData: AboutData = {
   img: 'profile.png',
   paragraphOne:
-    'I\'m a Mobile Engineer with a focus on solutions for both iOS and Android. Experience with Swift, SwiftUI, KMP, and React Native. Current maintainer of Lottie React Native. In my free time, i do some volunteer OSS work (Mostly Lottie and React Native itself).',
-  paragraphTwo:
-    '',
+    "I'm a Mobile Engineer with a focus on solutions for both iOS and Android. Experience with Swift, SwiftUI, KMP, and React Native. Current maintainer of Lottie React Native. In my free time, i do some volunteer OSS work (Mostly Lottie and React Native itself).",
+  paragraphTwo: '',
   resume: require('../images/CV.pdf'), // if no resume, the button will not show up
 };
 
@@ -41,7 +40,7 @@ export const projectsData: ProjectData[] = [
     title: 'McDonalds',
     info: 'Umain',
     info2: 'The global McDonalds Mobile application',
-    url: 'https://www.mcdonalds.com/us/en-us.html'
+    url: 'https://www.mcdonalds.com/us/en-us.html',
   },
   {
     id: nanoid(),
@@ -49,7 +48,7 @@ export const projectsData: ProjectData[] = [
     title: 'Hava',
     info: 'Hava',
     info2: 'A health app, with a focus on Satiety per calorie and Food detection algorithms',
-    url: 'https://www.hava.co/'
+    url: 'https://www.hava.co/',
   },
   {
     id: nanoid(),
@@ -82,8 +81,7 @@ export const projectsData: ProjectData[] = [
     img: 'xapa.png',
     title: 'Xapa',
     info: 'Xapa',
-    info2:
-      "A crypto currency wallet app with coin exchange capabilities",
+    info2: 'A crypto currency wallet app with coin exchange capabilities',
     url: 'https://xapawallet.com/',
   },
   {
