@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 // @ts-ignore
-import Tilt from 'react-tilt';
+import { Tilt } from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
@@ -29,7 +29,7 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
+          <Title title="Projects i have worked on" />
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, id } = project;
 
