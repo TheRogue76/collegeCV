@@ -27,9 +27,9 @@ export const heroData: HeroData = {
 export const aboutData: AboutData = {
   img: 'profile.png',
   paragraphOne:
-    'I am a Software Engineer with 4 years of professional experience developing software solutions. I graduated from K.N.T University of Technology with a B.Sc. in Computer Engineering. My main research interests are Software Engineering, Software Validation and Software Evolution.',
+    'I\'m a Mobile Engineer with a focus on solutions for both iOS and Android. Experience with Swift, Kotlin, SwiftUI, KMP, and React Native. Current maintainer of Lottie React Native. In my free time, i do some volunteer OSS work (Mostly Lottie and React Native itself).',
   paragraphTwo:
-    'Creative and self-motivated Computer Scientist interested in research and implementation. Adequate knowledge of programming languages and frameworks relevant for software engineering and web / mobile development. Committed to working as a team member and collaborating with others.',
+    '',
   resume: require('../images/CV.pdf'), // if no resume, the button will not show up
 };
 
@@ -37,10 +37,26 @@ export const aboutData: AboutData = {
 export const projectsData: ProjectData[] = [
   {
     id: nanoid(),
+    img: 'mcd.png',
+    title: 'McDonalds',
+    info: 'Umain',
+    info2: 'The global McDonalds Mobile application',
+    url: 'https://www.mcdonalds.com/us/en-us.html'
+  },
+  {
+    id: nanoid(),
+    img: 'hava.png',
+    title: 'Hava',
+    info: 'Hava',
+    info2: 'A health app, with a focus on Satiety per calorie and Food detection algorithms',
+    url: 'https://www.hava.co/'
+  },
+  {
+    id: nanoid(),
     img: 'dietdoctor.png',
     title: 'DietDoctor',
     info: 'DietDoctor',
-    info2: 'A Dietary app built with RN for iOS and Android, with a focus on metabolic health.',
+    info2: 'A Dietary app built for iOS and Android, with a focus on metabolic health.',
     url: 'https://www.dietdoctor.com/',
   },
   {
@@ -49,17 +65,8 @@ export const projectsData: ProjectData[] = [
     title: 'Appetit',
     info: 'Appetit',
     info2:
-      'A Workout app built with RN for iOS and Android, with health tracking using Apple Healthkit and Google Fit. Made to connect coaches with their customers and to provide a platform for streaming their workouts',
+      'A Workout app built for iOS and Android, with health tracking using Apple Healthkit and Google Fit. Made to connect coaches with their customers and to provide a platform for streaming their workouts',
     url: 'https://www.appetit.fit/',
-  },
-  {
-    id: nanoid(),
-    img: 'pacman.png',
-    title: 'Pacman Game',
-    info: 'Open source',
-    info2:
-      "Pacman game is on open source game developed in Unity using C# as my bachelor degree's final project and runs on iOS and Android. The game has all the original enemies and is controlled using an on screen navigator",
-    repo: 'https://gitlab.com/p.nasirimehr/pac-man',
   },
   {
     id: nanoid(),
@@ -67,7 +74,7 @@ export const projectsData: ProjectData[] = [
     title: 'Patogh Social App',
     info: 'K.N.T.U University of Technology',
     info2:
-      'A Social gathering coordinator app built natively for Android as part of my System Analysis and Design course in college. I served as Scrum master, Back-end Developer and DevOps on this project',
+      'A Social gathering coordinator app built for Android as part of my System Analysis and Design course in college',
     url: 'https://prezi.com/p/bqql2m5-pjjk/patogh/',
   },
   {
@@ -76,17 +83,8 @@ export const projectsData: ProjectData[] = [
     title: 'Xapa',
     info: 'Xapa',
     info2:
-      "A crypto currency wallet app with coin exchange capabilities. On top of developing it's UI, I created the webhook service that connected to bitcoin core for tracking all incoming and outgoing transactions of our wallets",
+      "A crypto currency wallet app with coin exchange capabilities",
     url: 'https://xapawallet.com/',
-  },
-  {
-    id: nanoid(),
-    img: 'CVHR.jpeg',
-    title: 'Computer Vision: Handwriting recognition',
-    info: 'Open Source',
-    info2:
-      'Done as a part of my college curriculum, This project uses OpenCV and Keras and trains two convolutional neural networks for persian handwriting recognition',
-    repo: 'https://github.com/TheRogue76/Computer-Vision', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
