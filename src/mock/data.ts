@@ -113,7 +113,7 @@ export const footerData: FooterData = {
     {
       id: nanoid(),
       name: 'linkedin',
-      url: 'https://www.linkedin.com/in/parsa-nasirimehr-3547b9168/',
+      url: 'https://www.linkedin.com/in/parsanasirimehr/',
     },
     {
       id: nanoid(),
